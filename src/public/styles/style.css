@@ -1,0 +1,105 @@
+body {
+    background-color: white;
+    color: #002B51;
+	text-align: center;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    background-color: #004b8d;
+    color: white;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#nav #navlist{
+    display: flex;
+    list-style-type: none;
+    margin: 0; 
+    flex: 1;
+    padding: 0;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+#nav #navlist li{
+    border-right: 1px solid #bbbbbb;
+    border-left: 1px solid #bbbbbb;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+#nav #navlist li a{
+    display: block;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.search-form{
+   display: flex; 
+   align-items: center;
+}
+
+.search-form input, .search-form button{
+    padding: 8px;
+    border: none;
+    margin-left: 5px;
+}
+
+footer{
+    background-color: #004b8d;
+    color: white;
+    position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+#SignInButton {
+    background-color: #004b8d;
+    color: white;
+}
+
+table {
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+    background-color: #d9d9d9;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px black solid;
+}
+
+a:link,a:visited{
+color: black;
+background color: #f44336;
+padding: 14px 25px;
+}
+
+
+#AdminButtons {
+    background-color: #004b8d;
+    color: white;
+}
