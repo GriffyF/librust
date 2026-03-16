@@ -1,0 +1,7 @@
+#!/bin/bash
+
+bash github.sh
+wait
+bash node.sh
+wait
+bash psql.sh

@@ -1,0 +1,13 @@
+#!/bin/bash
+sudo apt install -y postgresql postgresql-contrib
+
+cd /etc/postgres/main/17
+echo "local   all             librus                                  peer" >> pg_hba.conf
+
+sudo psql -U postgres -c "CREATE USER librus WITH ENCRYPTED PASSWORD 'librus'; ALTER USER librus WITH SUPERUSER;"
+psql -U librus -d postgres -c "CREATE DATABASE librusdb;"
+
+psql -U postgres -d librusdb < setup.sql
+
+
+

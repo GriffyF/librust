@@ -1,0 +1,14 @@
+#!/bin/bash
+sudo apt install git
+
+git clone https://github.com/GriffyF/librust.git
+
+cd librust
+cat <<EOF > .env
+SESSION_SECRET=Rm0uRF8bUUz32nJX6kxxTg9uZcU98ArS9AsIf3LA3hku
+PORT=3005
+DB_HOST=localhost
+DB_USER=librus
+DB_PASS=librus
+DB_DB=librusdb
+EOF
